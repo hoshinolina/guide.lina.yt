@@ -27,7 +27,7 @@ Reboot your computer with the USB device plugged in to boot into Fedora KDE (you
 > [!TIP]
 > While you're visiting your UEFI setup / BIOS, you might want to disable Secure Boot if you don't need it for Windows. This will make your life easier later, especially if you need to install the NVidia drivers.
 
-The image you downloaded is a "Live" image, which will directly boot into a Fedora KDE environment where you can explore and see how the OS works before installing it (any changes you make and any files you save won't persist). Click the big install button to begin the installation, and follow the prompts which should be self-explanatory. Pay particular attention to the question about storage, as you can use to overwrite an entire HDD/SSD drive or instead resize an existing OS to make space and have both installed at the same time (dual-boot).
+The image you downloaded is a "Live" image, which will directly boot into a Fedora KDE environment where you can explore and see how the OS works before installing it (any changes you make and any files you save won't persist). Click the big install button to begin the installation, and follow the prompts which should be self-explanatory. Pay particular attention to the question about storage, as you can choose to overwrite an entire HDD/SSD drive or instead resize an existing OS to make space and have both installed at the same time (dual-boot).
 
 You will be prompted to create a user and password. Don't forget it!
 
