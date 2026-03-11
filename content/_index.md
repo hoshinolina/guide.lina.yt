@@ -12,7 +12,7 @@ If you're using another distribution, or you're doing non-streaming work in the 
 
 ## About me
 
-I'm Hoshino Lina, a tech VTuber. In the past I used to work on open source GPU drivers, and now I'm focusing on developing streaming and related technology such as [Spout2PW](https://spout2pw.lina.yt). I also contribute to OBS and many other projects. My goal is to help make streaming on Linux as easy, powerful, and stable as possible. I stream some of my work on [my channgel](https://lina.yt), so feel free to drop by and say hi! You can also join [my Discord](https://lina.yt/discord) if you want to chat or ask questions about Linux, we have lots of cool people who are happy to help.
+I'm Hoshino Lina, a tech VTuber. In the past I used to work on open source GPU drivers, and now I'm focusing on developing streaming and related technology such as [Spout2PW](https://spout2pw.lina.yt). I also contribute to OBS and many other projects. My goal is to help make streaming on Linux as easy, powerful, and stable as possible. I stream some of my work on [my channel](https://lina.yt), so feel free to drop by and say hi! You can also join [my Discord](https://lina.yt/discord) if you want to chat or ask questions about Linux, we have lots of cool people who are happy to help.
 
 ## About this guide
 
