@@ -35,17 +35,17 @@ You will be prompted to create a user and password. Don't forget it!
 
 The KDE first-time welcome screen will ask you a few questions. You can skip this if you want, but it's useful information. One of the steps will ask you whether you want to **Enable Third Party Repositories**. You can safely skip this, since you will be enabling more comprehensive software sources yourself later.
 
-{{< image src="extra-repos-prompt.png" alt="Extra repositories dialog" >}}
+{{< image src="extra-repos-prompt.webp" alt="Extra repositories dialog" >}}
 
 If you are using WiFi, connect to the network by clicking the network icon in the system tray, choosing your network, and entering the password. If you are using wired Ethernet, you should already be connected automatically.
 
 You will probably get a prompt titled **KDE Wallet Service** asking you to create a new wallet. You can choose **Classic, blowfish encrypted file** for the easiest option. Your Wallet is where the system stores saved passwords (similar to the macOS Keychain), including your WiFi password, which is why it's popping up now. During wallet setup, it might ask you to enter a new password for the wallet. You can use your login password here, which will allow the wallet to automatically unlock when you log in to the system, so you don't have to type two separate passwords.
 
-{{< image src="kwallet-prompt.png" alt="KDE Wallet Service dialog" >}}
+{{< image src="kwallet-prompt.webp" alt="KDE Wallet Service dialog" >}}
 
 Now is a good time to update your OS, since the installation image will have somewhat out of date software. You might be prompted by a notification automatically. Otherwise, click on the start menu on the bottom left {{< icon src="images/fedora-logo-sprite.svg" >}}, and open up **Discover**. This tool is the graphical interface to install and update software. Click on **Updates** on the left, and click on **Update All** to begin downloading updates. You will be prompted to restart to complete the installation.
 
-{{< image src="discover.png" alt="Discover app" >}}
+{{< image src="discover.webp" alt="Discover app" >}}
 
 > [!NOTE]
 > Although Linux has a reputation for "not needing reboots" to install updates, and it is technically possible to update without a reboot, this is often clunky. You might find that applications stop working properly until a reboot, as the running and installed version of different system components conflict in strange ways. It's always best to use Discover to install updates with a full reboot cycle, especially if any system components are being updated.
@@ -63,7 +63,7 @@ Fedora is a somewhat conservative Linux distribution, and for legal and licensin
 
 We're going to set this up using the terminal. From the start menu, open **Konsole**. Then, copy and paste these commands one by one to set up RPM Fusion. Make sure to copy each command on its own, then press **Enter** and follow the prompts until you get back at the green `username@fedora:~$` prompt.
 
-{{< image src="konsole.png" alt="Konsole" >}}
+{{< image src="konsole.webp" alt="Konsole" >}}
 
 > [!TIP]
 > Use Ctrl+Shift+V to paste in the terminal. Head over to the [Concepts](/docs/concepts#command-line-terminal) page to learn more about how to use the terminal.
@@ -182,3 +182,45 @@ Reboot to switch to the newly installed drivers.
 
 > [!NOTE]
 > You can also install these graphically from the **Discover** app by searching for **NVIDIA**. However, that won't give you the option to install the 32-bit libraries if you need them.
+
+
+# Fedora の設定
+
+## はじめる前に
+
+このガイドは配信に重点を置いているため、Fedora の一般的な概念については簡易的に説明するに留めます。より詳細なドキュメントについては、公式の [Fedora のドキュメント](https://docs.fedoraproject.org/)をご確認ください。
+
+このページでは、一般的なインストール手順とマルチメディアと会心に対応するための重要なシステムソフトウェアのインストール方法について説明します。
+
+Fedora をインストールするには 4GB 以上の容量の USB ドライブが必要です。
+
+> [!WARNING]
+> USB ドライブの内容はすべて消去されるので、重要なファイルがないか確認をしてください！
+
+## インストール
+
+[Fedora KDE Plasma デスクトップ](https://fedoraproject.org/kde/)のページで、ダウンロードボタンをクリックしてダウンロードページへ移動してください。すでに手順がわかる場合は、ISO イメージをダウンロードしてここから起動できます。
+
+そうでない場合は、Fedora Media Writer の項目までスクロールし、現在の OS に適したダウンロードを選択してください。その後に Fedora Media Writer を開いて指示に従いましょう。**自動ダウンロード** が実行されるのを待ち、使用する Fedora リリース選択画面が表示されたら、**公式エディション** と **Fedora KDE Plasma デスクトップ** を選択し、バージョンはデフォルト (最新の安定版) のままにしてください。
+
+USB デバイスを接続した状態でコンピューターを再起動し、Fedora KDE を起動します (動作させるには UEFI セットアップ画面で USB ドライブをブートデバイスとして選択する必要がある場合があります)。
+
+> [!TIP]
+> UEFI セットアップ/BIOS にアクセスする際に Windows でセキュアブートが不要であれば無効にしておくことをおすすめします。
+> 特に NVIDIA ドライバをインストールする必要がある場合での作業が簡単になります。
+
+ダウンロードしたイメージは「Live」イメージです。Fedora KDE 環境が直接起動され、インストール前に OS の動作を確認できます (変更内容や保存したファイルは残りません)。大きなインストールボタンをクリックでインストールを開始し、表示される指示に従ってください。特にストレージに関する質問にはご注意ください。HDD/SSD ドライブ全体を上書きするか、既存の OS のサイズを変更して空き容量を増やし、両方を同時にインストールするかを選択できます (デュアルブート)。
+
+ユーザーとパスワードの作成を求められるので、忘れずに入力してください！
+
+## 最初のステップ
+
+KDE の初回起動画面では、いくつかの質問が表示されます。これはスキップできますが、役立つ情報があります。手順の一つに **サードパーティーのリポジトリを有効にする** かどうかを尋ねられますが、後でより包括的なソフトウェアソースを自分で有効にするため、これはスキップしても問題ありません。
+
+{{< image src="extra-repos-prompt.webp" alt="Extra repositories dialog" >}}
+
+Wi-Fi を使用している場合は、システムトレイのネットワークアイコンをクリックし、ネットワークを選択してパスワードを入力することで、ネットワークに接続できます。有線イーサネットを使用している場合は、すでに自動で接続されているはずです。
+
+おそらく **KDE ウォレットサービス** というタイトルのプロンプトが表示され、新しいウォレットの作成を求められます。最も簡単なオプションとして **クラシック、blowfish 暗号化ファイル** を選択できます。ウォレットは、システムが保存したパスワード (macOS のキーチェーンに似ています) を保存する場所になります。Wi-Fi パスワードも含まれるため、このポップアップが表示されます。ウォレットのセットアップ中に、ウォレットの新しいパスワードの入力を求められる場合があります。ここでログインパスワードを使用できます。ログインパスワードを入力すると、システムにログインした際にウォレットが自動的にロック解除されるため、2 つのパスワードを個別に入力する必要がなくなります。
+
+{{< image src="kwallet-prompt.webp" alt="KDE Wallet Service dialog" >}}
