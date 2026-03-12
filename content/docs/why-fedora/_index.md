@@ -5,7 +5,7 @@ title: "Why Fedora?"
 
 # Why Fedora?
 
-[{{< image src="Fedora_logo.svg" alt="Fedora logo" width="50%" zoom="0">}}](https://fedoraproject.org)
+[{{< image src="Fedora_logo.webp" alt="Fedora logo" width="50%" zoom="0">}}](https://fedoraproject.org)
 
 There is a huge variety of Linux distributions, so why choose Fedora if you're a streamer? Well, because I'm a package maintainer myself of course, so I can help make *your* streaming experience on Fedora better!
 
