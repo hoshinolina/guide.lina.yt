@@ -20,7 +20,7 @@ The Fedora project supports the last two releases, which means that you can hold
 
 There are many desktop environments available for Linux. For streaming, and especially new users I highly recommend KDE Plasma. This desktop has many power user features that will make your life easier as a streamer, while having the overall base look and feel of a classic Windows environment, so you won't feel lost. KDE Plasma lets you customize all sorts of details about your desktop *without* requiring you to edit configuration files manually or learn any programming languages, so it is a great choice even if you are a newcomer or not a very technical person. KDE Plasma also has some of the best integration with newer desktop technologies like Wayland, and that means you won't run into many problems that often affect streamers on Linux (such as issues with OBS hotkeys or window/screen capture).
 
-Where releavant, this guide will focus on using KDE Plasma, although everything that isn't related to the desktop itself will apply to most other desktop environments too.
+Where relevant, this guide will focus on using KDE Plasma, although everything that isn't related to the desktop itself will apply to most other desktop environments too.
 
 > [!TIP]
 > KDE Plasma is also the native Linux desktop available on the Steam Deck, so if you have one of those and you've ever gone into desktop mode, you already know what it looks like!
